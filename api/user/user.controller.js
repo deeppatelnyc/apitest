@@ -7,7 +7,7 @@ const { hashSync, genSaltSync, compareSync } = require("bcrypt");
 const nDate = new Date().toLocaleString('en-US', {
   timeZone: 'Asia/Calcutta'
 });
-let IS_SPAM_ALLOW = true;
+let IS_SPAM_ALLOW = false;
 
   module.exports = {
     createUser: (req, res) => {
